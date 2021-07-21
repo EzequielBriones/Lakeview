@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+@mixin center-object {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin img-edit {
+  z-index: 20;
+  outline: 1.5rem solid $primary-dark;
+  box-shadow: 0 1.75rem 5rem rgba($color: $black, $alpha: 0.4);
+}

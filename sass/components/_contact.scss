@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.contact {
+  height: 53rem;
+  background-image: radial-gradient(circle closest-corner at 75% 45%, transparent 0%, transparent, 50%, rgba($primary-light-2, 0.4) 50%),
+    url(img/contact-form-img-2.jpg);
+  background-size: cover;
+  background-position: left 50%;
+  border-radius: 3rem;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+  margin-top: 3rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}

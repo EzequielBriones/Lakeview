@@ -1,0 +1,47 @@
+@use "../abstracts" as *;
+
+.composition {
+  position: relative;
+  margin-left: 10rem;
+
+  &-img {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba($color: $black, $alpha: 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 2.5rem;
+    transition: all 0.2s;
+
+    &--1 {
+      left: -5rem;
+      top: 0;
+
+      &-active {
+        transform: scale(1.05) translateY(20rem) translateX(15rem);
+        @include img-edit;
+      }
+    }
+
+    &--2 {
+      left: 10rem;
+      top: 0rem;
+
+      &-active {
+        transform: scale(1.05) translateY(20rem) translateX(0);
+        @include img-edit;
+      }
+    }
+
+    &--3 {
+      left: 25rem;
+      top: 0rem;
+      padding-bottom: 0;
+
+      &-active {
+        transform: scale(1.05) translateY(20rem) translateX(-15rem);
+        @include img-edit;
+      }
+    }
+  }
+}
