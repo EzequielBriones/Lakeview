@@ -3,8 +3,31 @@
 .composition {
   position: relative;
   margin-left: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-  &-img {
+  @media only screen and (max-width: $breakpoint-1169) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $breakpoint-1169) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: $breakpoint-1051) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $breakpoint-969) {
+    margin-left: 18rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-768) {
+    margin-left: 13rem;
+  }
+
+  &__img {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color: $black, $alpha: 0.4);
     border-radius: 2px;
@@ -12,6 +35,18 @@
     z-index: 10;
     outline-offset: 2.5rem;
     transition: all 0.2s;
+    flex: 25%;
+    max-width: 100%;
+
+    @media only screen and (max-width: $breakpoint-969) {
+      width: 70%;
+      position: unset;
+    }
+
+    @media only screen and (max-width: $breakpoint-768) {
+      height: 13rem;
+      width: auto;
+    }
 
     &--1 {
       left: -5rem;
@@ -20,6 +55,12 @@
       &-active {
         transform: scale(1.05) translateY(20rem) translateX(15rem);
         @include img-edit;
+
+        @media only screen and (max-width: $breakpoint-969) {
+          @include img-edit;
+          transform: scale(1.1);
+          z-index: 58;
+        }
       }
     }
 
@@ -30,6 +71,12 @@
       &-active {
         transform: scale(1.05) translateY(20rem) translateX(0);
         @include img-edit;
+
+        @media only screen and (max-width: $breakpoint-969) {
+          @include img-edit;
+          transform: scale(1.1);
+          z-index: 58;
+        }
       }
     }
 
@@ -41,6 +88,12 @@
       &-active {
         transform: scale(1.05) translateY(20rem) translateX(-15rem);
         @include img-edit;
+
+        @media only screen and (max-width: $breakpoint-969) {
+          @include img-edit;
+          transform: scale(1.1);
+          z-index: 58;
+        }
       }
     }
   }

@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.5), rgba($primary-dark, 0.5)), url(img/header-image-1-medium);
+    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.5), rgba($primary-dark, 0.5)), url(img/header-image-1-medium.jpg);
     background-position: top;
     background-size: cover;
     animation: fade1 10s infinite;
@@ -61,6 +61,10 @@
 
   &__logo {
     height: 25rem;
+
+    @media only screen and (max-width: $breakpoint-768) {
+      height: 20rem;
+    }
   }
 
   &__text-box {

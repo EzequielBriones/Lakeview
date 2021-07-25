@@ -1,6 +1,12 @@
 @use "../abstracts" as *;
 
 .form {
+  width: auto;
+
+  @media only screen and (max-width: $breakpoint-768) {
+    width: 30rem;
+  }
+
   &__input {
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
@@ -45,6 +51,10 @@
 
   &__group {
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: $breakpoint-969) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-group {
@@ -59,6 +69,11 @@
     cursor: pointer;
     padding-left: 5rem;
     position: relative;
+
+    @media only screen and (max-width: $breakpoint-969) {
+      font-size: 1.2rem;
+      padding-left: 3.5rem;
+    }
   }
 
   &__radio-input:checked + &__radio-label &__radio-button::after {
@@ -78,6 +93,11 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media only screen and (max-width: $breakpoint-969) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
 
     &::after {
       content: "";

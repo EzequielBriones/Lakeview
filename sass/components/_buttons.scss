@@ -3,6 +3,18 @@
 .btn {
   margin-top: 1.5rem;
 
+  @media only screen and (max-width: $breakpoint-1169) {
+    margin-top: 2.5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-1051) {
+    margin-top: 3rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-768) {
+    margin-top: 3.5rem;
+  }
+
   &:link,
   &:visited {
     text-decoration: none;
@@ -15,6 +27,11 @@
     border: 2px solid $brown;
     display: inline-block;
     transition: all 0.2s;
+
+    @media only screen and (max-width: $breakpoint-768) {
+      font-size: 1.3rem;
+      padding: 1rem 2.5rem;
+    }
   }
 
   &:hover {

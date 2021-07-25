@@ -5,8 +5,29 @@
   color: $white;
   perspective: 150rem;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+
+  @media only screen and (max-width: $breakpoint-1051) {
+    height: 50rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-969) {
+    width: 75%;
+    height: 47rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-768) {
+    height: 50rem;
+    margin: 0 auto;
+  }
+
+  &:nth-child(3n) {
+    @media only screen and (max-width: $breakpoint-768) {
+      margin-left: 24.5rem;
+      margin-top: 2rem;
+    }
+  }
 
   &__side {
     position: absolute;
@@ -99,6 +120,10 @@
   &__bullets {
     padding: 3rem;
 
+    @media only screen and (max-width: $breakpoint-768) {
+      padding: 1rem;
+    }
+
     ul {
       color: $grey-dark;
       list-style: none;
@@ -134,6 +159,17 @@
 
     &-duration {
       font-size: 1.5rem;
+    }
+  }
+
+  &__btn {
+    visibility: hidden;
+
+    @media only screen and (max-width: $breakpoint-768) {
+      visibility: visible;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 4.5rem;
     }
   }
 }

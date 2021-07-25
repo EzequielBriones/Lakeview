@@ -17,6 +17,10 @@
 
 .testimonials-section {
   position: relative;
+
+  @media only screen and (max-width: $breakpoint-768) {
+    height: auto;
+  }
 }
 
 .membership-section {

@@ -10,6 +10,16 @@
   overflow: hidden;
   margin: 0 auto;
 
+  &:nth-child(4n) {
+    @media only screen and (max-width: $breakpoint-1051) {
+      margin-left: 35.5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-768) {
+      margin: 0 auto;
+    }
+  }
+
   &--1 {
     background-image: linear-gradient(to right bottom, rgba($primary-light-1, 0.5), rgba($primary-dark, 0.5)), url(/img/amenity-img-1.jpg);
     background-size: cover;
@@ -26,12 +36,19 @@
     background-image: linear-gradient(to right bottom, rgba($primary-light-1, 0.5), rgba($primary-dark, 0.5)), url(/img/amenity-img-3.jpg);
     background-size: cover;
     background-position: 78% 50%;
+
+    @media only screen and (max-width: $breakpoint-969) {
+      background-position: 50% 50%;
+    }
   }
 
   &--4 {
     background-image: linear-gradient(to right bottom, rgba($primary-light-1, 0.5), rgba($primary-dark, 0.5)), url(/img/amenity-img-4.jpg);
     background-size: cover;
     background-position: 78% 50%;
+    @media only screen and (max-width: $breakpoint-969) {
+      background-position: 50% 50%;
+    }
   }
 
   &__title {
@@ -89,5 +106,18 @@
 
   &__text {
     font-size: 1.5rem;
+  }
+
+  &__btn {
+    visibility: hidden;
+
+    @media only screen and (max-width: $breakpoint-768) {
+      visibility: visible;
+      color: $white !important;
+      border-bottom: 1.5px solid $white !important;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 5rem;
+    }
   }
 }
