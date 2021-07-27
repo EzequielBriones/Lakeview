@@ -57,6 +57,10 @@
     position: absolute;
     top: 25%;
     @include center-object;
+
+    @media only screen and (max-width: $breakpoint-425) {
+      top: 20%;
+    }
   }
 
   &__logo {
@@ -71,11 +75,19 @@
     position: absolute;
     top: 58%;
     @include center-object;
+
+    @media only screen and (max-width: $breakpoint-425) {
+      top: 55%;
+    }
   }
 
   &__btn-box {
     position: absolute;
     top: 80%;
     @include center-object;
+
+    @media only screen and (max-width: $breakpoint-425) {
+      margin: 0 auto;
+    }
   }
 }

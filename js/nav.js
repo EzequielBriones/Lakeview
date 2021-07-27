@@ -23,8 +23,10 @@ $("a").click(function () {
   menuOpen = false;
 });
 
-$();
-
+$(".modal__btns").click(function () {
+  body.style.overflowY = "visible";
+  menuOpen = false;
+});
 // $(".nav").click(function () {
 //   if (!menuOpen) {
 //     $(".nav button").addClass("open");

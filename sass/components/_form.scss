@@ -19,6 +19,10 @@
     opacity: 1;
     border-bottom: 3px solid transparent;
 
+    @media only screen and (max-width: $breakpoint-320) {
+      width: 85%;
+    }
+
     &::-webkit-input-placeholder {
       color: $grey-dark-3;
     }
@@ -60,6 +64,10 @@
   &__radio-group {
     display: inline-block;
     width: 30%;
+
+    @media only screen and (max-width: $breakpoint-320) {
+      width: 28.5%;
+    }
   }
 
   &__radio-label {
@@ -73,6 +81,10 @@
     @media only screen and (max-width: $breakpoint-969) {
       font-size: 1.2rem;
       padding-left: 3.5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-320) {
+      font-size: 1.2rem;
     }
   }
 
@@ -123,5 +135,9 @@
     width: 100%;
     height: 10rem;
     padding: 1.5rem 1rem;
+
+    @media only screen and (max-width: $breakpoint-320) {
+      width: 85%;
+    }
   }
 }

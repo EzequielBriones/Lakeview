@@ -30,6 +30,10 @@
       font-size: 3.5rem;
       line-height: 2;
       text-transform: uppercase;
+
+      @media only screen and (max-width: $breakpoint-320) {
+        font-size: 3rem;
+      }
       & li {
         & a {
           color: $white;

@@ -27,6 +27,20 @@
     margin-left: 13rem;
   }
 
+  @media only screen and (max-width: $breakpoint-425) {
+    margin-left: 10rem;
+    margin-top: 4.5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-375) {
+    margin-left: 8rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-320) {
+    margin-left: 6rem;
+    margin-top: 8rem;
+  }
+
   &__img {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color: $black, $alpha: 0.4);
@@ -57,7 +71,6 @@
         @include img-edit;
 
         @media only screen and (max-width: $breakpoint-969) {
-          @include img-edit;
           transform: scale(1.1);
           z-index: 58;
         }
@@ -73,7 +86,6 @@
         @include img-edit;
 
         @media only screen and (max-width: $breakpoint-969) {
-          @include img-edit;
           transform: scale(1.1);
           z-index: 58;
         }
@@ -90,7 +102,6 @@
         @include img-edit;
 
         @media only screen and (max-width: $breakpoint-969) {
-          @include img-edit;
           transform: scale(1.1);
           z-index: 58;
         }

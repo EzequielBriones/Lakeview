@@ -10,8 +10,25 @@
   box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
   margin-top: 3rem;
 
+  @media only screen and (max-width: $breakpoint-425) {
+    background-image: radial-gradient(circle closest-corner at 100% 100%, transparent 0%, transparent, 25%, rgba($primary-light-2, 0.4) 25%),
+      url(img/contact-form-img-2.jpg);
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @media only screen and (max-width: $breakpoint-425) {
+      padding: 6rem 5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-375) {
+      padding: 6rem 2.5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-320) {
+      padding: 6rem 2rem;
+    }
   }
 }

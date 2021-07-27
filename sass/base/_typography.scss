@@ -22,12 +22,25 @@
     @media only screen and (max-width: $breakpoint-768) {
       font-size: 4rem;
     }
+
+    @media only screen and (max-width: $breakpoint-375) {
+      font-size: 4rem;
+    }
   }
 
   &--sub {
     display: block;
     font-family: "Satisfy", serif;
     font-size: 2.6rem;
+
+    @media only screen and (max-width: $breakpoint-425) {
+      margin-bottom: 6rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-768) {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -44,9 +57,19 @@
     font-size: 3rem;
   }
 
+  @media only screen and (max-width: $breakpoint-375) {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+
   &:hover {
     transform: skewY(1deg) skewX(5deg);
     text-shadow: 0.5rem 2rem 2rem rgba($black, 0.2);
+
+    @media only screen and (max-width: $breakpoint-768) {
+      transform: none;
+      text-shadow: none;
+    }
   }
 }
 
@@ -54,6 +77,10 @@
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $breakpoint-320) {
+    font-size: 1.5rem;
+  }
 }
 
 .paragraph {

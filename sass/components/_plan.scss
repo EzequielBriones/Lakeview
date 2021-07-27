@@ -14,18 +14,26 @@
 
   @media only screen and (max-width: $breakpoint-969) {
     width: 75%;
-    height: 47rem;
+    height: 48rem;
   }
 
   @media only screen and (max-width: $breakpoint-768) {
     height: 50rem;
-    margin: 0 auto;
+    margin-top: auto;
+  }
+
+  @media only screen and (max-width: $breakpoint-320) {
+    width: 90%;
   }
 
   &:nth-child(3n) {
     @media only screen and (max-width: $breakpoint-768) {
+      margin: 0 auto;
       margin-left: 24.5rem;
-      margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-425) {
+      margin: 0 auto;
     }
   }
 
@@ -170,6 +178,18 @@
       position: absolute;
       bottom: 1.5rem;
       left: 4.5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-425) {
+      left: 6.3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-375) {
+      left: 4rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-320) {
+      left: 4.6rem;
     }
   }
 }

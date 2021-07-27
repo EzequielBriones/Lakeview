@@ -18,4 +18,8 @@
   z-index: 58;
   outline: 1.5rem solid $primary-dark;
   box-shadow: 0 1.75rem 5rem rgba($color: $black, $alpha: 0.4);
+
+  @media only screen and (max-width: $breakpoint-320) {
+    outline: 1.3rem solid $primary-dark;
+  }
 }
