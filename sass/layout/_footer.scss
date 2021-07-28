@@ -6,26 +6,9 @@
   font-size: 1.4rem;
   margin-top: 5rem;
 
-  @media only screen and (max-width: $breakpoint-425) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   &__logo {
     text-align: center;
     transform: translateY(-1.5rem);
-
-    @media only screen and (max-width: $breakpoint-425) {
-      transform: translateX(15rem);
-    }
-
-    @media only screen and (max-width: $breakpoint-375) {
-      transform: translateX(13rem);
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      transform: translateX(10rem);
-    }
   }
 }
 
@@ -33,10 +16,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  @media only screen and (max-width: $breakpoint-425) {
-    width: 100%;
-  }
 
   &__btns {
     display: flex;
@@ -49,22 +28,21 @@
 
     @media only screen and (max-width: $breakpoint-969) {
       font-size: 1rem;
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $breakpoint-588) {
+      width: 100%;
+      font-size: 1.3rem;
     }
 
     @media only screen and (max-width: $breakpoint-425) {
-      width: 100%;
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       margin-top: 2rem;
     }
 
     @media only screen and (max-width: $breakpoint-375) {
-      width: 93%;
       margin: 0 auto;
-      font-size: 1.15rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      width: 99%;
       font-size: 1rem;
     }
 
@@ -103,14 +81,14 @@
     text-align: left;
     line-height: 1.5;
 
-    @media only screen and (max-width: $breakpoint-425) {
+    @media only screen and (max-width: $breakpoint-588) {
       margin: 0 auto;
       margin-top: 5rem;
-      width: 93%;
+      width: 63%;
     }
 
-    @media only screen and (max-width: $breakpoint-320) {
-      width: 98%;
+    @media only screen and (max-width: $breakpoint-425) {
+      width: 93%;
     }
 
     &--text {
@@ -121,17 +99,13 @@
       border-top: 1px $secondary-2-dark solid;
       padding-top: 1.5rem;
 
-      @media only screen and (max-width: $breakpoint-969) {
-        font-size: 1.2rem;
-      }
-
       @media only screen and (max-width: $breakpoint-768) {
         width: 90%;
       }
 
-      @media only screen and (max-width: $breakpoint-425) {
-        width: 100%;
+      @media only screen and (max-width: $breakpoint-588) {
         text-align: center;
+        width: 100%;
       }
     }
 

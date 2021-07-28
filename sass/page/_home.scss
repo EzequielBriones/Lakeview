@@ -11,16 +11,13 @@
   padding-right: 3rem;
 }
 
-.amenities-section {
+.amenities-section,
+.contact-section {
   background-color: $white;
 }
 
 .testimonials-section {
   position: relative;
-
-  @media only screen and (max-width: $breakpoint-768) {
-    height: auto;
-  }
 }
 
 .membership-section {
@@ -30,6 +27,5 @@
 
 .contact-section {
   padding-top: 2rem;
-  background-color: $white;
   margin-bottom: 5rem;
 }

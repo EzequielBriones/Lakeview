@@ -1,40 +1,49 @@
 @use "../abstracts" as *;
 
 .plan {
-  height: 47rem;
+  height: 80vh;
   color: $white;
   perspective: 150rem;
   position: relative;
   width: 90%;
   margin: 0 auto;
 
-  @media only screen and (max-width: $breakpoint-1051) {
-    height: 50rem;
+  @media only screen and (max-width: $breakpoint-1169) {
+    height: 100vh;
   }
 
-  @media only screen and (max-width: $breakpoint-969) {
-    width: 75%;
-    height: 48rem;
+  &:last-child {
+    @media only screen and (max-width: $breakpoint-768) {
+      padding-top: 53rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-375) {
+      padding-top: 50rem;
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint-999) {
+    width: 70%;
   }
 
   @media only screen and (max-width: $breakpoint-768) {
-    height: 50rem;
-    margin-top: auto;
+    width: 85%;
   }
 
-  @media only screen and (max-width: $breakpoint-320) {
-    width: 90%;
+  @media only screen and (max-width: $breakpoint-659) {
+    width: 50%;
   }
 
-  &:nth-child(3n) {
-    @media only screen and (max-width: $breakpoint-768) {
-      margin: 0 auto;
-      margin-left: 24.5rem;
-    }
+  @media only screen and (max-width: $breakpoint-588) {
+    width: 60%;
+  }
 
-    @media only screen and (max-width: $breakpoint-425) {
-      margin: 0 auto;
-    }
+  @media only screen and (max-width: $breakpoint-493) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $breakpoint-375) {
+    width: 95%;
   }
 
   &__side {
@@ -47,6 +56,8 @@
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     &--front {
       background-color: $white;
@@ -81,7 +92,7 @@
   }
 
   &__image {
-    height: 18rem;
+    height: 100%;
     background-size: cover;
     background-blend-mode: overlay;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -128,8 +139,12 @@
   &__bullets {
     padding: 3rem;
 
-    @media only screen and (max-width: $breakpoint-768) {
-      padding: 1rem;
+    &:not(:last-child) {
+      padding: 2rem 2rem 0.5rem 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-880) {
+      padding-top: 1.5rem;
     }
 
     ul {
@@ -171,25 +186,12 @@
   }
 
   &__btn {
-    visibility: hidden;
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: $breakpoint-768) {
-      visibility: visible;
-      position: absolute;
-      bottom: 1.5rem;
-      left: 4.5rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-425) {
-      left: 6.3rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-375) {
-      left: 4rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      left: 4.6rem;
+      display: block;
     }
   }
 }

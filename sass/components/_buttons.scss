@@ -1,23 +1,21 @@
 @use "../abstracts/variables" as *;
 
 .btn {
-  margin-top: 1.5rem;
+  // @media only screen and (max-width: $breakpoint-1169) {
+  //   margin-top: 2.5rem;
+  // }
 
-  @media only screen and (max-width: $breakpoint-1169) {
-    margin-top: 2.5rem;
-  }
+  // @media only screen and (max-width: $breakpoint-1051) {
+  //   margin-top: 3rem;
+  // }
 
-  @media only screen and (max-width: $breakpoint-1051) {
-    margin-top: 3rem;
-  }
+  // @media only screen and (max-width: $breakpoint-768) {
+  //   margin-top: 3.5rem;
+  // }
 
-  @media only screen and (max-width: $breakpoint-768) {
-    margin-top: 3.5rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-425) {
-    margin-top: 1.5rem;
-  }
+  // @media only screen and (max-width: $breakpoint-425) {
+  //   margin-top: 1.5rem;
+  // }
 
   &:link,
   &:visited {
@@ -26,25 +24,23 @@
     padding: 1rem 3rem;
     border-radius: 5rem;
     font-size: $default-font-size;
-
     position: relative;
     border: 2px solid $brown;
     display: inline-block;
     transition: all 0.2s;
 
-    @media only screen and (max-width: $breakpoint-768) {
+    @media only screen and (max-width: $breakpoint-880) {
       font-size: 1.3rem;
       padding: 1rem 2.5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-768) {
+      padding: 1rem 2rem;
     }
 
     @media only screen and (max-width: $breakpoint-375) {
       font-size: 1.2rem;
       padding: 1rem 2.3rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      padding: 1rem 3rem;
-      font-size: 1.3rem;
     }
   }
 
@@ -62,7 +58,6 @@
   &--brown {
     background-color: $brown;
     color: $grey-light-1;
-    margin-right: 1rem;
   }
 }
 
@@ -119,9 +114,8 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
-  // filter: drop-shadow(0 5rem 0.9rem rgba($black, 0.5));
 
-  @media only screen and (max-width: $breakpoint-425) {
+  @media only screen and (max-width: $breakpoint-493) {
     width: 5.5rem;
     height: 5.5rem;
     right: 1.5rem;
@@ -137,7 +131,7 @@
     cursor: pointer;
     opacity: 0.8;
 
-    @media only screen and (max-width: $breakpoint-425) {
+    @media only screen and (max-width: $breakpoint-493) {
       width: 30px;
       height: 3px;
     }
@@ -153,7 +147,7 @@
       transition: all 0.3s ease-in-out;
       border: hidden;
 
-      @media only screen and (max-width: $breakpoint-425) {
+      @media only screen and (max-width: $breakpoint-493) {
         width: 30px;
         height: 3px;
       }
@@ -162,7 +156,7 @@
     &::before {
       transform: translate(-16.5px, -10px);
 
-      @media only screen and (max-width: $breakpoint-425) {
+      @media only screen and (max-width: $breakpoint-493) {
         transform: translate(-15px, -9px);
       }
     }
@@ -170,7 +164,7 @@
     &::after {
       transform: translate(-16.5px, 9px);
 
-      @media only screen and (max-width: $breakpoint-425) {
+      @media only screen and (max-width: $breakpoint-493) {
         transform: translate(-15px, 6px);
       }
     }
@@ -180,7 +174,7 @@
     transform: translateX(-50px);
     background: transparent;
 
-    @media only screen and (max-width: $breakpoint-425) {
+    @media only screen and (max-width: $breakpoint-493) {
       transform: translateX(-48.5px);
     }
   }

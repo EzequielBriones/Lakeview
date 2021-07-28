@@ -7,103 +7,59 @@
   display: inline-block;
   border-radius: 2rem;
   overflow: hidden;
+  height: fit-content;
 
   @media only screen and (max-width: $breakpoint-969) {
     font-size: 1.3rem;
   }
 
-  @media only screen and (max-width: $breakpoint-768) {
-    height: auto;
-  }
-
   &__shape {
-    width: 15rem;
-    height: 15rem;
+    width: 17rem;
+    height: 17rem;
     float: left;
     -webkit-clip-path: circle(90% at 3% 8%);
     clip-path: circle(90% at 3% 8%);
-    -webkit-shape-outside: circle(100% at 3% 8%);
-    shape-outside: circle(100% at 3% 8%);
+    -webkit-shape-outside: circle(90% at 3% 8%);
+    shape-outside: circle(90% at 3% 8%);
     position: relative;
     transform: translate(-2rem);
 
-    @media only screen and (max-width: $breakpoint-768) {
-      -webkit-clip-path: ellipse(150px 150px at 30% 10%);
-      clip-path: ellipse(150px 150px at 30% 10%);
-      -webkit-shape-outside: ellipse(150px 150px at 30% 10%);
-      shape-outside: ellipse(150px 150px at 30% 10%);
-      width: 50%;
-    }
-
-    @media only screen and (max-width: $breakpoint-425) {
-      -webkit-clip-path: ellipse(110px 130px at 30% 10%);
-      clip-path: ellipse(110px 130px at 30% 10%);
-      -webkit-shape-outside: ellipse(110px 130px at 30% 10%);
-      shape-outside: ellipse(110px 130px at 30% 10%);
-    }
-
     @media only screen and (max-width: $breakpoint-375) {
-      -webkit-clip-path: ellipse(110px 120px at 30% 10%);
-      clip-path: ellipse(110px 120px at 30% 10%);
-      -webkit-shape-outside: ellipse(110px 120px at 30% 10%);
-      shape-outside: ellipse(110px 120px at 30% 10%);
-      width: 56%;
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      -webkit-clip-path: ellipse(100px 120px at 30% 10%);
-      clip-path: ellipse(100px 120px at 30% 10%);
-      -webkit-shape-outside: ellipse(100px 120px at 30% 10%);
-      shape-outside: ellipse(100px 120px at 30% 10%);
-      width: 56%;
+      -webkit-clip-path: circle(80% at 3% 8%);
+      clip-path: circle(80% at 3% 8%);
+      -webkit-shape-outside: circle(80% at 3% 8%);
+      shape-outside: circle(80% at 3% 8%);
+      width: 50%;
     }
   }
 
   &__image {
-    height: 100%;
-    transform: scale(1.7);
+    height: 80%;
+    transform: scale(1.45);
     transition: all 0.5s;
 
-    @media only screen and (max-width: $breakpoint-768) {
-      transform: scale(1);
-    }
-
     @media only screen and (max-width: $breakpoint-375) {
-      transform: translateX(-3rem);
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
       transform: translateX(-3rem);
     }
   }
 
   &:hover &__image {
-    transform: scale(1.4);
+    transform: scale(1.1);
     filter: blur(3px) brightness(80%);
+
+    @media only screen and (max-width: $breakpoint-768) {
+      transform: scale(1.45);
+      filter: none;
+    }
   }
 
   &__para {
     font-size: 1.5rem;
-
-    @media only screen and (max-width: $breakpoint-969) {
-      font-size: 1.3rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-768) {
-      font-size: 1.35rem;
-    }
   }
 
   &__text {
-    padding: 3rem;
-
-    @media only screen and (max-width: $breakpoint-969) {
-      padding: 2.5rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-768) {
-      padding: 1rem;
-    }
+    padding: 2.3rem;
+    height: auto;
   }
 
   &__caption {
@@ -120,28 +76,19 @@
   &:hover &__caption {
     opacity: 1;
     transform: translate(-50%, -80%);
+
+    @media only screen and (max-width: $breakpoint-768) {
+      opacity: 0;
+      transform: none;
+    }
   }
 
   &--1 {
     float: left;
     margin-left: 5rem;
-    height: 23rem;
 
     @media only screen and (max-width: $breakpoint-768) {
       margin: 0 auto;
-      height: 17rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-425) {
-      height: 24rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-375) {
-      height: 27.5rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      height: 32.8rem;
     }
   }
 
@@ -149,27 +96,9 @@
     float: right;
     margin-left: 3rem;
     margin-top: 9rem;
-    height: 23rem;
-
-    @media only screen and (max-width: $breakpoint-1169) {
-      margin-top: 0;
-    }
 
     @media only screen and (max-width: $breakpoint-768) {
       margin: 0 auto;
-      height: 17rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-425) {
-      height: 25.3rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-375) {
-      height: 27rem;
-    }
-
-    @media only screen and (max-width: $breakpoint-320) {
-      height: 30.5rem;
     }
   }
 }

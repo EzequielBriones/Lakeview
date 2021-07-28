@@ -6,39 +6,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 70%;
 
-  @media only screen and (max-width: $breakpoint-1169) {
-    width: 80%;
+  @media only screen and (max-width: $breakpoint-649) {
+    margin-top: 6rem;
   }
 
-  @media only screen and (max-width: $breakpoint-1169) {
-    width: 70%;
+  @media only screen and (max-width: $breakpoint-350) {
+    width: 50%;
   }
 
-  @media only screen and (max-width: $breakpoint-1051) {
-    width: 60%;
-  }
-
-  @media only screen and (max-width: $breakpoint-969) {
-    margin-left: 18rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-768) {
-    margin-left: 13rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-425) {
-    margin-left: 10rem;
-    margin-top: 4.5rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-375) {
-    margin-left: 8rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-320) {
-    margin-left: 6rem;
-    margin-top: 8rem;
+  & a {
+    text-align: center;
   }
 
   &__img {
@@ -49,16 +28,23 @@
     z-index: 10;
     outline-offset: 2.5rem;
     transition: all 0.2s;
-    flex: 25%;
-    max-width: 100%;
 
     @media only screen and (max-width: $breakpoint-969) {
-      width: 70%;
+      width: 50%;
       position: unset;
     }
 
-    @media only screen and (max-width: $breakpoint-768) {
+    @media only screen and (max-width: $breakpoint-880) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: $breakpoint-425) {
       height: 13rem;
+      width: auto;
+    }
+
+    @media only screen and (max-width: $breakpoint-375) {
+      height: 10rem;
       width: auto;
     }
 
@@ -70,8 +56,8 @@
         transform: scale(1.05) translateY(20rem) translateX(15rem);
         @include img-edit;
 
-        @media only screen and (max-width: $breakpoint-969) {
-          transform: scale(1.1);
+        @media only screen and (max-width: $breakpoint-1051) {
+          transform: scale(1.2);
           z-index: 58;
         }
       }
@@ -81,12 +67,17 @@
       left: 10rem;
       top: 0rem;
 
+      @media only screen and (max-width: $breakpoint-1051) {
+        left: 8rem;
+        top: 10rem;
+      }
+
       &-active {
         transform: scale(1.05) translateY(20rem) translateX(0);
         @include img-edit;
 
-        @media only screen and (max-width: $breakpoint-969) {
-          transform: scale(1.1);
+        @media only screen and (max-width: $breakpoint-1051) {
+          transform: scale(1.2);
           z-index: 58;
         }
       }
@@ -97,12 +88,17 @@
       top: 0rem;
       padding-bottom: 0;
 
+      @media only screen and (max-width: $breakpoint-1051) {
+        left: 20rem;
+        top: 20rem;
+      }
+
       &-active {
         transform: scale(1.05) translateY(20rem) translateX(-15rem);
         @include img-edit;
 
-        @media only screen and (max-width: $breakpoint-969) {
-          transform: scale(1.1);
+        @media only screen and (max-width: $breakpoint-1051) {
+          transform: scale(1.2);
           z-index: 58;
         }
       }

@@ -4,6 +4,7 @@
   color: $white;
   margin-bottom: 2.5rem;
   font-weight: 400;
+  text-align: center;
 
   &--main {
     display: block;
@@ -16,11 +17,11 @@
     }
 
     @media only screen and (max-width: $breakpoint-1051) {
-      font-size: 5.5rem;
+      font-size: 5rem;
     }
 
-    @media only screen and (max-width: $breakpoint-768) {
-      font-size: 4rem;
+    @media only screen and (max-width: $breakpoint-880) {
+      font-size: 4.5rem;
     }
 
     @media only screen and (max-width: $breakpoint-375) {
@@ -50,6 +51,7 @@
   font-weight: 700;
   background-image: linear-gradient(to right, $primary-light-2, $secondary-light);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: all 1s;
 
@@ -77,10 +79,6 @@
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
-
-  @media only screen and (max-width: $breakpoint-320) {
-    font-size: 1.5rem;
-  }
 }
 
 .paragraph {
