@@ -840,15 +840,15 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 .plan__image--1 {
-  background-position: right;
+  background-position: center;
   background-image: linear-gradient(to right bottom, #e2b5a8, #876c64), url(img/plan-img-1.jpg);
 }
 .plan__image--2 {
-  background-position: left;
+  background-position: right;
   background-image: linear-gradient(to right bottom, #bbd4eb, #707f8d), url(img/plan-img-2.jpg);
 }
 .plan__image--3 {
-  background-position: center;
+  background-position: left;
   background-image: linear-gradient(to right bottom, #b398b0, #80657d), url(img/plan-img-3.jpg);
 }
 .plan__heading {

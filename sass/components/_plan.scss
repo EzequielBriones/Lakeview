@@ -99,17 +99,17 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
     &--1 {
-      background-position: right;
+      background-position: center;
       background-image: linear-gradient(to right bottom, $secondary-1, $secondary-1-dark), url(img/plan-img-1.jpg);
     }
 
     &--2 {
-      background-position: left;
+      background-position: right;
       background-image: linear-gradient(to right bottom, $secondary-2, $secondary-2-dark), url(img/plan-img-2.jpg);
     }
 
     &--3 {
-      background-position: center;
+      background-position: left;
       background-image: linear-gradient(to right bottom, $secondary-3, $secondary-3-dark), url(img/plan-img-3.jpg);
     }
   }
