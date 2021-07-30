@@ -44,9 +44,9 @@
   &__logo {
     height: 25rem;
 
-    @media only screen and (max-width: $breakpoint-880) {
-      height: 20rem;
-    }
+    // @media only screen and (max-width: $breakpoint-880) {
+    //   height: 20rem;
+    // }
   }
 
   &__text-box {
@@ -65,9 +65,9 @@
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: $breakpoint-768) {
-      top: 80%;
-      margin: 0 auto;
-    }
+    // @media only screen and (max-width: $breakpoint-768) {
+    //   top: 80%;
+    //   margin: 0 auto;
+    // }
   }
 }

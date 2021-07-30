@@ -4,51 +4,59 @@
   height: 53rem;
   background-image: radial-gradient(circle closest-corner at 75% 45%, transparent 0%, transparent, 50%, rgba($primary-light-2, 0.4) 50%),
     url(img/contact-form-img-2.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-position: left 50%;
   border-radius: 3rem;
   box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
   margin-top: 3rem;
 
-  @media only screen and (max-width: $breakpoint-713) {
-    background-image: radial-gradient(circle closest-corner at 81.5% 45%, transparent 0%, transparent, 40%, rgba($primary-light-2, 0.4) 40%),
-      url(img/contact-form-img-2.jpg);
-  }
+  // @media only screen and (max-width: $breakpoint-713) {
+  //   background-image: radial-gradient(circle closest-corner at 81.5% 45%, transparent 0%, transparent, 40%, rgba($primary-light-2, 0.4) 40%),
+  //     url(img/contact-form-img-2.jpg);
+  // }
 
-  @media only screen and (max-width: $breakpoint-659) {
-    background-position: 40% 50%;
-  }
+  // @media only screen and (max-width: $breakpoint-659) {
+  //   background-position: 40% 50%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-588) {
+  @include respond(tab-port) {
     background-image: radial-gradient(circle closest-corner at 100% 100%, transparent 0%, transparent, 40%, rgba($primary-light-2, 0.4) 40%),
       url(img/contact-form-img-2.jpg);
-    background-size: 180% 200%;
-    background-position: 40% 70%;
   }
 
-  @media only screen and (max-width: $breakpoint-493) {
-    background-size: 300% 200%;
+  @include respond(phone) {
+    background-size: 180% 200%;
+    // background-position: 40% 70%;
   }
+
+  // @media only screen and (max-width: $breakpoint-493) {
+  //   background-size: 300% 200%;
+  // }
 
   &__form {
     width: 50%;
     padding: 6rem;
 
-    @media only screen and (max-width: $breakpoint-588) {
+    @include respond(tab-port) {
       width: 100%;
-      margin: 0 auto;
+      padding: 3rem;
     }
 
-    @media only screen and (max-width: $breakpoint-425) {
-      padding: 6rem 5rem;
-    }
+    // @media only screen and (max-width: $breakpoint-588) {
+    //   width: 100%;
+    //   margin: 0 auto;
+    // }
 
-    @media only screen and (max-width: $breakpoint-375) {
-      padding: 6rem 2.5rem;
-    }
+    // @media only screen and (max-width: $breakpoint-425) {
+    //   padding: 6rem 5rem;
+    // }
 
-    @media only screen and (max-width: $breakpoint-320) {
-      padding: 6rem 2rem;
-    }
+    // @media only screen and (max-width: $breakpoint-375) {
+    //   padding: 6rem 2.5rem;
+    // }
+
+    // @media only screen and (max-width: $breakpoint-320) {
+    //   padding: 6rem 2rem;
+    // }
   }
 }

@@ -1,19 +1,17 @@
 @use "../abstracts" as *;
 
 .form {
-  width: auto;
+  // @media only screen and (max-width: $breakpoint-588) {
+  //   width: 100%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-588) {
-    width: 100%;
-  }
+  // @media only screen and (max-width: $breakpoint-768) {
+  //   width: 30rem;
+  // }
 
-  @media only screen and (max-width: $breakpoint-768) {
-    width: 30rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-350) {
-    width: 28rem;
-  }
+  // @media only screen and (max-width: $breakpoint-350) {
+  //   width: 28rem;
+  // }
 
   &__input {
     font-size: 1.5rem;
@@ -27,9 +25,9 @@
     opacity: 1;
     border-bottom: 3px solid transparent;
 
-    @media only screen and (max-width: $breakpoint-350) {
-      width: 95%;
-    }
+    // @media only screen and (max-width: $breakpoint-350) {
+    //   width: 95%;
+    // }
 
     &::-webkit-input-placeholder {
       color: $grey-dark-3;
@@ -64,17 +62,17 @@
   &__group {
     margin-bottom: 3rem;
 
-    @media only screen and (max-width: $breakpoint-969) {
-      margin-bottom: 2rem;
-    }
+    // @media only screen and (max-width: $breakpoint-969) {
+    //   margin-bottom: 2rem;
+    // }
   }
 
   &__radio-group {
     display: inline-block;
     width: 30%;
 
-    @media only screen and (max-width: $breakpoint-350) {
-      width: 31%;
+    @include respond(big-desk) {
+      margin-right: 0.7rem;
     }
   }
 
@@ -86,8 +84,7 @@
     padding-left: 5rem;
     position: relative;
 
-    @media only screen and (max-width: $breakpoint-969) {
-      font-size: 1.2rem;
+    @include respond(phone) {
       padding-left: 3.5rem;
     }
   }
@@ -110,10 +107,10 @@
     top: 0;
     left: 0;
 
-    @media only screen and (max-width: $breakpoint-969) {
-      height: 2.5rem;
-      width: 2.5rem;
-    }
+    // @media only screen and (max-width: $breakpoint-969) {
+    //   height: 2.5rem;
+    //   width: 2.5rem;
+    // }
 
     &::after {
       content: "";
@@ -140,13 +137,13 @@
     height: 10rem;
     padding: 1.5rem 1rem;
 
-    @media only screen and (max-width: $breakpoint-588) {
-      width: 100%;
-      margin: 0 auto;
-    }
+    // @media only screen and (max-width: $breakpoint-588) {
+    //   width: 100%;
+    //   margin: 0 auto;
+    // }
 
-    @media only screen and (max-width: $breakpoint-350) {
-      width: 95%;
-    }
+    // @media only screen and (max-width: $breakpoint-350) {
+    //   width: 95%;
+    // }
   }
 }

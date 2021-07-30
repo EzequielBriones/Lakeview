@@ -19,7 +19,43 @@
   outline: 1.5rem solid $primary-dark;
   box-shadow: 0 1.75rem 5rem rgba($color: $black, $alpha: 0.4);
 
-  @media only screen and (max-width: $breakpoint-320) {
-    outline: 1.3rem solid $primary-dark;
+  // @media only screen and (max-width: $breakpoint-320) {
+  //   outline: 1.3rem solid $primary-dark;
+  // }
+}
+
+// MEDIA QUERYS
+
+// BREAKPOINTS
+
+//     0-576px for portrait phones.
+//     577-768px for tablets in portrait mode.
+//     769-991 for tablets in landscape mode.
+//     992-1200px for laptops.
+//     1200px+ for large devices.
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 36em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
   }
 }

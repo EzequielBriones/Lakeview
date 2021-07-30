@@ -9,10 +9,10 @@
 }
 
 .testimonials__container {
-  @media only screen and (max-width: $breakpoint-768) {
-    grid-template-columns: unset;
-    gap: 4rem;
-  }
+  // @media only screen and (max-width: $breakpoint-768) {
+  //   grid-template-columns: unset;
+  //   gap: 4rem;
+  // }
 }
 
 .amenities__container {
@@ -21,9 +21,9 @@
   margin-top: 5rem;
   gap: 1rem;
 
-  @media only screen and (max-width: $breakpoint-1219) {
-    gap: 4rem;
-  }
+  // @media only screen and (max-width: $breakpoint-1219) {
+  //   gap: 4rem;
+  // }
 }
 
 .membership__container {

@@ -19,32 +19,30 @@
 
   &__btns {
     display: flex;
-    width: 40%;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: lighter;
     justify-content: center;
     letter-spacing: 0.0313rem;
 
-    @media only screen and (max-width: $breakpoint-969) {
-      font-size: 1rem;
-      width: 50%;
-    }
+    // @media only screen and (max-width: $breakpoint-969) {
+    //   font-size: 1rem;
+    //   width: 50%;
+    // }
 
-    @media only screen and (max-width: $breakpoint-588) {
+    @include respond(tab-port) {
       width: 100%;
-      font-size: 1.3rem;
     }
 
-    @media only screen and (max-width: $breakpoint-425) {
-      font-size: 1.25rem;
-      margin-top: 2rem;
-    }
+    // @media only screen and (max-width: $breakpoint-425) {
+    //   font-size: 1.25rem;
+    //   margin-top: 2rem;
+    // }
 
-    @media only screen and (max-width: $breakpoint-375) {
-      margin: 0 auto;
-      font-size: 1rem;
-    }
+    // @media only screen and (max-width: $breakpoint-375) {
+    //   margin: 0 auto;
+    //   font-size: 1rem;
+    // }
 
     & ul {
       list-style: none;
@@ -54,9 +52,14 @@
       flex-wrap: wrap;
       gap: 1.5rem;
 
-      @media only screen and (max-width: $breakpoint-768) {
-        gap: 1rem;
+      @include respond(tab-port) {
+        width: 100%;
+        justify-content: center;
       }
+
+      // @media only screen and (max-width: $breakpoint-768) {
+      //   gap: 1rem;
+      // }
 
       & li {
         & a {
@@ -81,15 +84,15 @@
     text-align: left;
     line-height: 1.5;
 
-    @media only screen and (max-width: $breakpoint-588) {
-      margin: 0 auto;
-      margin-top: 5rem;
-      width: 63%;
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      margin-top: 2.5rem;
     }
 
-    @media only screen and (max-width: $breakpoint-425) {
-      width: 93%;
-    }
+    // @media only screen and (max-width: $breakpoint-425) {
+    //   width: 93%;
+    // }
 
     &--text {
       margin-bottom: 1rem;
@@ -99,11 +102,13 @@
       border-top: 1px $secondary-2-dark solid;
       padding-top: 1.5rem;
 
-      @media only screen and (max-width: $breakpoint-768) {
-        width: 90%;
+      @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+        margin-top: 2.5rem;
       }
 
-      @media only screen and (max-width: $breakpoint-588) {
+      @include respond(tab-port) {
         text-align: center;
         width: 100%;
       }
@@ -114,9 +119,9 @@
       text-transform: uppercase;
       transition: all 0.3s;
 
-      @media only screen and (max-width: $breakpoint-768) {
-        font-size: 1.3rem;
-      }
+      // @media only screen and (max-width: $breakpoint-768) {
+      //   font-size: 1.3rem;
+      // }
 
       &:hover,
       &:active {

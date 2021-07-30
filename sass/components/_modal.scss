@@ -1,54 +1,54 @@
-@use "../abstracts" as *;
+// @use "../abstracts" as *;
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $primary-light-1;
-  display: grid;
-  place-items: center;
-  transition: all 0.3s linear;
-  visibility: hidden;
-  opacity: 0.95;
-  z-index: 60;
+// .modal {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: $primary-light-1;
+//   display: grid;
+//   place-items: center;
+//   transition: all 0.3s linear;
+//   visibility: hidden;
+//   opacity: 0.95;
+//   z-index: 60;
 
-  &__container {
-    border-radius: 0.5rem;
-    width: 90vw;
-    height: 60vh;
-    max-width: 73.125rem;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    position: relative;
+//   &__container {
+//     border-radius: 0.5rem;
+//     width: 90vw;
+//     height: 60vh;
+//     max-width: 73.125rem;
+//     text-align: center;
+//     display: grid;
+//     place-items: center;
+//     position: relative;
 
-    &--list {
-      list-style: none;
-      color: $white;
-      font-size: 3.5rem;
-      line-height: 2;
-      text-transform: uppercase;
+//     &--list {
+//       list-style: none;
+//       color: $white;
+//       font-size: 3.5rem;
+//       line-height: 2;
+//       text-transform: uppercase;
 
-      @media only screen and (max-width: $breakpoint-320) {
-        font-size: 3rem;
-      }
-      & li {
-        & a {
-          color: $white;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
+//       // @media only screen and (max-width: $breakpoint-320) {
+//       //   font-size: 3rem;
+//       // }
+//       & li {
+//         & a {
+//           color: $white;
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//   }
+// }
 
-.open-modal {
-  visibility: visible;
-  z-index: 60;
-}
+// .open-modal {
+//   visibility: visible;
+//   z-index: 60;
+// }
 
-.hidden {
-  overflow-y: hidden;
-}
+// .hidden {
+//   overflow-y: hidden;
+// }

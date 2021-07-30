@@ -9,9 +9,9 @@
   overflow: hidden;
   height: fit-content;
 
-  @media only screen and (max-width: $breakpoint-969) {
-    font-size: 1.3rem;
-  }
+  // @media only screen and (max-width: $breakpoint-969) {
+  //   font-size: 1.3rem;
+  // }
 
   &__shape {
     width: 17rem;
@@ -24,13 +24,13 @@
     position: relative;
     transform: translate(-2rem);
 
-    @media only screen and (max-width: $breakpoint-375) {
-      -webkit-clip-path: circle(80% at 3% 8%);
-      clip-path: circle(80% at 3% 8%);
-      -webkit-shape-outside: circle(80% at 3% 8%);
-      shape-outside: circle(80% at 3% 8%);
-      width: 50%;
-    }
+    // @media only screen and (max-width: $breakpoint-375) {
+    //   -webkit-clip-path: circle(80% at 3% 8%);
+    //   clip-path: circle(80% at 3% 8%);
+    //   -webkit-shape-outside: circle(80% at 3% 8%);
+    //   shape-outside: circle(80% at 3% 8%);
+    //   width: 50%;
+    // }
   }
 
   &__image {
@@ -38,19 +38,19 @@
     transform: scale(1.45);
     transition: all 0.5s;
 
-    @media only screen and (max-width: $breakpoint-375) {
-      transform: translateX(-3rem);
-    }
+    // @media only screen and (max-width: $breakpoint-375) {
+    //   transform: translateX(-3rem);
+    // }
   }
 
   &:hover &__image {
     transform: scale(1.1);
     filter: blur(3px) brightness(80%);
 
-    @media only screen and (max-width: $breakpoint-768) {
-      transform: scale(1.45);
-      filter: none;
-    }
+    // @media only screen and (max-width: $breakpoint-768) {
+    //   transform: scale(1.45);
+    //   filter: none;
+    // }
   }
 
   &__para {
@@ -77,17 +77,17 @@
     opacity: 1;
     transform: translate(-50%, -80%);
 
-    @media only screen and (max-width: $breakpoint-768) {
-      opacity: 0;
-      transform: none;
-    }
+    // @media only screen and (max-width: $breakpoint-768) {
+    //   opacity: 0;
+    //   transform: none;
+    // }
   }
 
   &--1 {
     float: left;
     margin-left: 5rem;
 
-    @media only screen and (max-width: $breakpoint-768) {
+    @include respond(tab-port) {
       margin: 0 auto;
     }
   }
@@ -97,8 +97,9 @@
     margin-left: 3rem;
     margin-top: 9rem;
 
-    @media only screen and (max-width: $breakpoint-768) {
+    @include respond(tab-port) {
       margin: 0 auto;
+      margin-top: 3rem;
     }
   }
 }

@@ -1,50 +1,50 @@
 @use "../abstracts" as *;
 
 .plan {
-  height: 80vh;
+  height: 47rem;
   color: $white;
   perspective: 150rem;
   position: relative;
   width: 90%;
   margin: 0 auto;
 
-  @media only screen and (max-width: $breakpoint-1169) {
-    height: 100vh;
-  }
+  // @media only screen and (max-width: $breakpoint-1169) {
+  //   height: 100vh;
+  // }
 
-  &:last-child {
-    @media only screen and (max-width: $breakpoint-768) {
-      padding-top: 53rem;
-    }
+  // &:last-child {
+  //   @media only screen and (max-width: $breakpoint-768) {
+  //     padding-top: 53rem;
+  //   }
 
-    @media only screen and (max-width: $breakpoint-375) {
-      padding-top: 50rem;
-    }
-  }
+  //   @media only screen and (max-width: $breakpoint-375) {
+  //     padding-top: 50rem;
+  //   }
+  // }
 
-  @media only screen and (max-width: $breakpoint-999) {
-    width: 70%;
-  }
+  // @media only screen and (max-width: $breakpoint-999) {
+  //   width: 70%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-768) {
-    width: 85%;
-  }
+  // @media only screen and (max-width: $breakpoint-768) {
+  //   width: 85%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-659) {
-    width: 50%;
-  }
+  // @media only screen and (max-width: $breakpoint-659) {
+  //   width: 50%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-588) {
-    width: 60%;
-  }
+  // @media only screen and (max-width: $breakpoint-588) {
+  //   width: 60%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-493) {
-    width: 80%;
-  }
+  // @media only screen and (max-width: $breakpoint-493) {
+  //   width: 80%;
+  // }
 
-  @media only screen and (max-width: $breakpoint-375) {
-    width: 95%;
-  }
+  // @media only screen and (max-width: $breakpoint-375) {
+  //   width: 95%;
+  // }
 
   &__side {
     position: absolute;
@@ -93,24 +93,23 @@
 
   &__image {
     height: 100vh;
-    width: 100%;
     background-size: cover;
     background-blend-mode: overlay;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
     &--1 {
-      background-position: center;
+      // background-position: center;
       background-image: linear-gradient(to right bottom, $secondary-1, $secondary-1-dark), url(img/plan-img-1.jpg);
     }
 
     &--2 {
-      background-position: right;
+      // background-position: right;
       background-image: linear-gradient(to right bottom, $secondary-2, $secondary-2-dark), url(img/plan-img-2.jpg);
     }
 
     &--3 {
-      background-position: left;
+      // background-position: left;
       background-image: linear-gradient(to right bottom, $secondary-3, $secondary-3-dark), url(img/plan-img-3.jpg);
     }
   }
@@ -147,9 +146,9 @@
       padding: 2rem 2rem 0.5rem 2rem;
     }
 
-    @media only screen and (max-width: $breakpoint-880) {
-      padding-top: 1.5rem;
-    }
+    // @media only screen and (max-width: $breakpoint-880) {
+    //   padding-top: 1.5rem;
+    // }
 
     ul {
       color: $grey-dark;
@@ -192,10 +191,9 @@
   &__btn {
     display: none;
     margin: 0 auto;
-    margin-bottom: 2rem;
 
-    @media only screen and (max-width: $breakpoint-768) {
-      display: block;
-    }
+    // @include respond(tab-land) {
+    //   display: block;
+    // }
   }
 }
