@@ -1,18 +1,6 @@
 @use "../abstracts" as *;
 
 .form {
-  // @media only screen and (max-width: $breakpoint-588) {
-  //   width: 100%;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-768) {
-  //   width: 30rem;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-350) {
-  //   width: 28rem;
-  // }
-
   &__input {
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
@@ -24,10 +12,6 @@
     font-family: inherit;
     opacity: 1;
     border-bottom: 3px solid transparent;
-
-    // @media only screen and (max-width: $breakpoint-350) {
-    //   width: 95%;
-    // }
 
     &::-webkit-input-placeholder {
       color: $grey-dark-3;
@@ -61,10 +45,6 @@
 
   &__group {
     margin-bottom: 3rem;
-
-    // @media only screen and (max-width: $breakpoint-969) {
-    //   margin-bottom: 2rem;
-    // }
   }
 
   &__radio-group {
@@ -107,11 +87,6 @@
     top: 0;
     left: 0;
 
-    // @media only screen and (max-width: $breakpoint-969) {
-    //   height: 2.5rem;
-    //   width: 2.5rem;
-    // }
-
     &::after {
       content: "";
       display: block;
@@ -136,14 +111,5 @@
     width: 100%;
     height: 10rem;
     padding: 1.5rem 1rem;
-
-    // @media only screen and (max-width: $breakpoint-588) {
-    //   width: 100%;
-    //   margin: 0 auto;
-    // }
-
-    // @media only screen and (max-width: $breakpoint-350) {
-    //   width: 95%;
-    // }
   }
 }

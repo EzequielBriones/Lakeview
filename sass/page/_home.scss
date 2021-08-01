@@ -4,11 +4,19 @@
 .testimonials-section,
 .amenities-section {
   padding: 4rem 0;
+
+  @include respond(phone) {
+    padding: 2rem 0;
+  }
 }
 
 .about-section {
   background-color: $grey-light-1;
-  padding-right: 3rem;
+
+  @include respond(phone) {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
 
 .amenities-section,
@@ -23,9 +31,17 @@
 .membership-section {
   padding: 7rem 0;
   background-color: $grey-light-1;
+
+  @include respond(phone) {
+    padding: 2rem 0;
+  }
 }
 
 .contact-section {
   padding-top: 2rem;
   margin-bottom: 5rem;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
 }

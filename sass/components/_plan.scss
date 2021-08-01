@@ -8,43 +8,9 @@
   width: 90%;
   margin: 0 auto;
 
-  // @media only screen and (max-width: $breakpoint-1169) {
-  //   height: 100vh;
-  // }
-
-  // &:last-child {
-  //   @media only screen and (max-width: $breakpoint-768) {
-  //     padding-top: 53rem;
-  //   }
-
-  //   @media only screen and (max-width: $breakpoint-375) {
-  //     padding-top: 50rem;
-  //   }
-  // }
-
-  // @media only screen and (max-width: $breakpoint-999) {
-  //   width: 70%;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-768) {
-  //   width: 85%;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-659) {
-  //   width: 50%;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-588) {
-  //   width: 60%;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-493) {
-  //   width: 80%;
-  // }
-
-  // @media only screen and (max-width: $breakpoint-375) {
-  //   width: 95%;
-  // }
+  @include respond(tab-port) {
+    height: auto;
+  }
 
   &__side {
     position: absolute;
@@ -56,18 +22,34 @@
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+
+    @include respond(tab-port) {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      border-radius: 0;
+    }
 
     &--front {
       background-color: $white;
       border-radius: 30px 0 30px 0;
+
+      @include respond(tab-port) {
+        border-radius: 0;
+      }
     }
 
     &--back {
       background-color: $primary-light-1;
       transform: rotateY(180deg);
       border-radius: 0 30px 0 30px;
+
+      @include respond(tab-port) {
+        transform: rotateY(0);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        border-radius: 0;
+      }
 
       &-1 {
         background-image: linear-gradient(to right bottom, $secondary-1, $grey-dark);
@@ -85,6 +67,10 @@
 
   &:hover &__side--front {
     transform: rotateY(-180deg);
+
+    @include respond(tab-port) {
+      transform: rotateY(0);
+    }
   }
 
   &:hover &__side--back {
@@ -92,25 +78,36 @@
   }
 
   &__image {
-    height: 100vh;
+    height: 18rem;
     background-size: cover;
-    background-blend-mode: overlay;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+    @supports (background-blend-mode: overlay) {
+      background-blend-mode: overlay;
+    }
+
     &--1 {
-      // background-position: center;
-      background-image: linear-gradient(to right bottom, $secondary-1, $secondary-1-dark), url(img/plan-img-1.jpg);
+      background-image: linear-gradient(to right bottom, rgba($secondary-1, 0.5), rgba($secondary-1-dark, 0.5)), url(img/plan-img-1.jpg);
+
+      @supports (background-blend-mode: overlay) {
+        background-image: linear-gradient(to right bottom, $secondary-1, $secondary-1-dark), url(img/plan-img-1.jpg);
+      }
     }
 
     &--2 {
-      // background-position: right;
-      background-image: linear-gradient(to right bottom, $secondary-2, $secondary-2-dark), url(img/plan-img-2.jpg);
+      background-image: linear-gradient(to right bottom, rgba($secondary-2, 0.5), rgba($secondary-2-dark, 0.5)), url(img/plan-img-2.jpg);
+
+      @supports (background-blend-mode: overlay) {
+        background-image: linear-gradient(to right bottom, $secondary-2, $secondary-2-dark), url(img/plan-img-2.jpg);
+      }
     }
 
     &--3 {
-      // background-position: left;
-      background-image: linear-gradient(to right bottom, $secondary-3, $secondary-3-dark), url(img/plan-img-3.jpg);
+      background-image: linear-gradient(to right bottom, rgba($secondary-3, 0.5), rgba($secondary-3-dark, 0.5)), url(img/plan-img-3.jpg);
+
+      @supports (background-blend-mode: overlay) {
+        background-image: linear-gradient(to right bottom, $secondary-3, $secondary-3-dark), url(img/plan-img-3.jpg);
+      }
     }
   }
 
@@ -120,7 +117,7 @@
     font-size: 2.8rem;
     text-transform: uppercase;
     position: absolute;
-    top: 29%;
+    top: 11rem;
     right: 1.5rem;
     width: 20rem;
     text-align: right;
@@ -142,14 +139,6 @@
   &__bullets {
     padding: 3rem;
 
-    &:not(:last-child) {
-      padding: 2rem 2rem 0.5rem 2rem;
-    }
-
-    // @media only screen and (max-width: $breakpoint-880) {
-    //   padding-top: 1.5rem;
-    // }
-
     ul {
       color: $grey-dark;
       list-style: none;
@@ -170,6 +159,10 @@
 
   &__button {
     text-align: center;
+
+    @include respond(tab-port) {
+      padding: 3rem;
+    }
   }
 
   &__cost {
@@ -177,6 +170,10 @@
       margin-top: 10rem;
       margin-bottom: 15rem;
       text-transform: uppercase;
+
+      @include respond(tab-port) {
+        margin-bottom: 6.3rem;
+      }
     }
 
     &-value {
@@ -186,14 +183,5 @@
     &-duration {
       font-size: 1.5rem;
     }
-  }
-
-  &__btn {
-    display: none;
-    margin: 0 auto;
-
-    // @include respond(tab-land) {
-    //   display: block;
-    // }
   }
 }

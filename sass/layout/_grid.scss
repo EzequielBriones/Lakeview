@@ -8,11 +8,8 @@
   flex-wrap: wrap;
 }
 
-.testimonials__container {
-  // @media only screen and (max-width: $breakpoint-768) {
-  //   grid-template-columns: unset;
-  //   gap: 4rem;
-  // }
+.about__container {
+  padding-right: 3rem;
 }
 
 .amenities__container {
@@ -20,10 +17,6 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 5rem;
   gap: 1rem;
-
-  // @media only screen and (max-width: $breakpoint-1219) {
-  //   gap: 4rem;
-  // }
 }
 
 .membership__container {
@@ -31,4 +24,11 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 5rem;
   gap: 4rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 3rem;
+  flex-wrap: wrap;
 }

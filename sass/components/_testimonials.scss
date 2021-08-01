@@ -9,10 +9,6 @@
   overflow: hidden;
   height: fit-content;
 
-  // @media only screen and (max-width: $breakpoint-969) {
-  //   font-size: 1.3rem;
-  // }
-
   &__shape {
     width: 17rem;
     height: 17rem;
@@ -23,14 +19,6 @@
     shape-outside: circle(90% at 3% 8%);
     position: relative;
     transform: translate(-2rem);
-
-    // @media only screen and (max-width: $breakpoint-375) {
-    //   -webkit-clip-path: circle(80% at 3% 8%);
-    //   clip-path: circle(80% at 3% 8%);
-    //   -webkit-shape-outside: circle(80% at 3% 8%);
-    //   shape-outside: circle(80% at 3% 8%);
-    //   width: 50%;
-    // }
   }
 
   &__image {
@@ -38,19 +26,15 @@
     transform: scale(1.45);
     transition: all 0.5s;
 
-    // @media only screen and (max-width: $breakpoint-375) {
-    //   transform: translateX(-3rem);
-    // }
+    @include respond(tab-port) {
+      transform: scale(1);
+      filter: blur(2px) brightness(80%);
+    }
   }
 
   &:hover &__image {
     transform: scale(1.1);
     filter: blur(3px) brightness(80%);
-
-    // @media only screen and (max-width: $breakpoint-768) {
-    //   transform: scale(1.45);
-    //   filter: none;
-    // }
   }
 
   &__para {
@@ -71,16 +55,16 @@
     font-size: 1.7rem;
     opacity: 0;
     transition: all 0.3s;
+
+    @include respond(tab-port) {
+      opacity: 1;
+      transform: translate(-50%, -80%);
+    }
   }
 
   &:hover &__caption {
     opacity: 1;
     transform: translate(-50%, -80%);
-
-    // @media only screen and (max-width: $breakpoint-768) {
-    //   opacity: 0;
-    //   transform: none;
-    // }
   }
 
   &--1 {

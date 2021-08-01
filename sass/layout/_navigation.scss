@@ -18,6 +18,11 @@
     cursor: pointer;
     text-align: center;
 
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -94,6 +99,11 @@
     background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.9), rgba($primary-dark, 0.9));
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__checkbox:checked ~ &__background {
