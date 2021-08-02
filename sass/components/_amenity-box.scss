@@ -65,6 +65,10 @@
 
   &:hover &__overlay {
     opacity: 0.8;
+
+    @include respond(tab-port) {
+      opacity: 0.6;
+    }
   }
 
   &:hover &__title {
