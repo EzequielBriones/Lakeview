@@ -1,17 +1,40 @@
-const checkbox = document.querySelector(".navigation__checkbox");
+const menuNav = document.querySelector(".nav");
+const modOver = document.querySelector(".modal");
+const menuIcon = document.querySelector(".nav__icon");
+const menuBtn = document.querySelector(".nav__button");
+
 const body = document.getElementsByTagName("body")[0];
 let menuOpen = false;
 
-checkbox.addEventListener("click", () => {
-  if (!menuOpen) {
-    body.style.overflowY = "hidden";
-    menuOpen = true;
-  } else {
-    body.style.overflowY = "visible";
-    menuOpen = false;
-  }
+menuIcon.addEventListener("click", function () {
+  modal();
 });
 
-$(".navigation__checkbox").click(function () {
-  $(".navigation__item a").toggle();
+menuBtn.addEventListener("click", function () {
+  modal();
+});
+
+menuNav.addEventListener("click", function () {
+  modal();
+});
+
+function modal() {
+  if (!menuOpen) {
+    menuNav.classList.add("open");
+    modOver.classList.add("open-modal");
+    menuOpen = true;
+    body.style.overflowY = "hidden";
+  } else {
+    menuNav.classList.remove("open");
+    menuOpen = false;
+    modOver.classList.remove("open-modal");
+    body.style.overflowY = "visible";
+  }
+}
+
+$("a").click(function () {
+  $("nav").removeClass("open-modal");
+  $(".nav").removeClass("open");
+  menuOpen = false;
+  body.style.overflowY = "visible";
 });

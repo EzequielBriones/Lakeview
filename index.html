@@ -19,33 +19,24 @@
     <title>Lakeview Country Club - A Great Lifestyle</title>
   </head>
   <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
+    <div class="nav">
+      <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="nav__button">
+        <span class="nav__icon">&nbsp;</span>
       </label>
-
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#home" class="navigation__link"><span>01</span>Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#about" class="navigation__link"><span>02</span>About Us</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#amenities" class="navigation__link"><span>03</span>Amenities</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#stories" class="navigation__link"><span>04</span>Stories</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#contact" class="navigation__link"><span>05</span>Contact</a>
-          </li>
-        </ul>
-      </nav>
     </div>
+
+    <nav class="modal">
+      <div class="modal__container">
+        <ul class="modal__container--list">
+          <li><a href="#home">01 Home</a></li>
+          <li><a href="#about">02 About Us</a></li>
+          <li><a href="#amenities">03 Amenities</a></li>
+          <li><a href="#stories">04 Stories</a></li>
+          <li><a href="#contact">05 Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <header class="header" id="home">
       <div class="header__slider header__slider--1"></div>
@@ -144,7 +135,6 @@
         <div class="amenity-box amenity-box--4">
           <div class="amenity-box__overlay"></div>
           <h3 class="amenity-box__title">Club House</h3>
-          <a href="#" class="amenity-box__btn btn-rectangular">Learn More &rArr;</a>
           <div class="amenity-box__content">
             <i class="amenity-box__icon icon-basic-home"></i>
             <h3 class="amenity-box__heading heading-tertiary u-margin-bottom-small">Club House</h3>

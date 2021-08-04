@@ -173,6 +173,7 @@
       text-transform: uppercase;
 
       @include respond(tab-port) {
+        margin-top: 5rem;
         margin-bottom: 6.3rem;
       }
     }
