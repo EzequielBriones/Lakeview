@@ -1,5 +1,4 @@
 const checkbox = document.querySelector(".navigation__checkbox");
-
 const body = document.getElementsByTagName("body")[0];
 let menuOpen = false;
 
