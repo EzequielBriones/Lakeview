@@ -33,6 +33,12 @@
         & a {
           color: $white;
           text-decoration: none;
+
+          &:hover,
+          &:active {
+            color: $secondary-4;
+            transform: translate(1rem);
+          }
         }
       }
     }

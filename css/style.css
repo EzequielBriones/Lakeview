@@ -858,6 +858,10 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.modal__container--list li a:hover, .modal__container--list li a:active {
+  color: #c4ac6c;
+  transform: translate(1rem);
+}
 
 .open-modal {
   visibility: visible;
