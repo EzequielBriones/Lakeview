@@ -1,14 +1,9 @@
 const menuNav = document.querySelector(".nav");
 const modOver = document.querySelector(".modal");
-const menuIcon = document.querySelector(".nav__icon");
 const menuBtn = document.querySelector(".nav__button");
 
 const body = document.getElementsByTagName("body")[0];
 let menuOpen = false;
-
-menuIcon.addEventListener("click", function () {
-  modal();
-});
 
 menuBtn.addEventListener("click", function () {
   modal();

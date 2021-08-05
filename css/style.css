@@ -833,7 +833,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.9), rgba(79, 97, 42, 0.9));
   display: grid;
   place-items: center;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   visibility: hidden;
   z-index: 60;
 }
@@ -1069,6 +1069,7 @@ body {
   right: 6rem;
   cursor: pointer;
   text-align: center;
+  align-items: center;
 }
 .nav__checkbox {
   display: none;
@@ -1093,7 +1094,7 @@ body {
 }
 .nav__button {
   position: relative;
-  margin-top: 3.5rem;
+  top: 3.5rem;
   cursor: pointer;
 }
 .nav__button, .nav__button::before, .nav__button::after {

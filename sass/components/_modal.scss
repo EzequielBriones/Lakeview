@@ -9,7 +9,7 @@
   background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.9), rgba($primary-dark, 0.9));
   display: grid;
   place-items: center;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   visibility: hidden;
   z-index: 60;
 
