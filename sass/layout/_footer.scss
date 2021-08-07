@@ -20,9 +20,11 @@
     font-weight: lighter;
     justify-content: flex-start;
     letter-spacing: 0.0313rem;
+    margin-left: 3rem;
 
     @include respond(tab-port) {
       width: 100%;
+      margin-left: 0;
     }
 
     & ul {
@@ -61,11 +63,13 @@
     text-align: left;
     line-height: 1.5;
     justify-content: flex-end;
+    margin-right: 3rem;
 
     @include respond(tab-port) {
       width: 100%;
       text-align: center;
       margin-top: 2.5rem;
+      margin-right: 0;
     }
 
     &--text {

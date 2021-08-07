@@ -16,22 +16,22 @@
   }
 
   &__slider--1 {
-    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.5), rgba($primary-dark, 0.5)), url(img/header-image-1-medium.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.8), rgba($primary-dark, 0.8)), url(img/header-image-1-medium.jpg);
     animation: fade1 10s infinite;
   }
 
   &__slider--2 {
-    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.5), rgba($primary-dark, 0.5)), url(img/header-image-2-medium.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.8), rgba($primary-dark, 0.8)), url(img/header-image-2-medium.jpg);
     animation: fade2 10s infinite;
   }
 
   &__slider--3 {
-    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.5), rgba($primary-dark, 0.5)), url(img/header-image-3-medium.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.8), rgba($primary-dark, 0.8)), url(img/header-image-3-medium.jpg);
     animation: fade3 10s infinite;
   }
 
   &__slider--4 {
-    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.5), rgba($primary-dark, 0.5)), url(img/header-image-4-medium.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-light-2, 0.8), rgba($primary-dark, 0.8)), url(img/header-image-4-medium.jpg);
     animation: fade4 10s infinite;
   }
 
