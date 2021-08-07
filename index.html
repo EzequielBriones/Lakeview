@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="vendors/fonts/icon-style.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora|Satisfy:100,300,400,700,900" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/eventos.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/eventos.js"></script>
 
     <!--FAVICONS-->
     <link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/apple-touch-icon.png" />
@@ -44,7 +44,11 @@
       <div class="header__slider header__slider--3"></div>
       <div class="header__slider header__slider--4"></div>
       <div class="header__logo-box">
-        <img src="img/lakeview-logo.png" alt="lakeview-logo" class="header__logo" />
+        <img
+          src="https://res.cloudinary.com/dlmzmbiec/image/upload/f_auto/v1628367911/lakeview-logo_ee956o.png"
+          alt="lakeview-logo"
+          class="header__logo"
+        />
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -83,9 +87,39 @@
         </div>
         <div>
           <div class="composition">
-            <a href="javascript:void(0)" class="img1"><img class="composition__img composition__img--1" src="img/img-1.jpg" alt="image 1" /></a>
-            <a href="javascript:void(0)" class="img2"><img class="composition__img composition__img--2" src="img/img-2.jpg" alt="image 2" /></a>
-            <a href="javascript:void(0)" class="img3"><img class="composition__img composition__img--3" src="img/img-3.jpg" alt="image 3" /></a>
+            <a href="javascript:void(0)" class="img1"
+              ><img
+                srcset="
+                  https://res.cloudinary.com/dlmzmbiec/image/upload/v1628366758/img-1_zfemat.jpg              1000w,
+                  https://res.cloudinary.com/dlmzmbiec/image/upload/w_300,f_auto/v1628366758/img-1_zfemat.jpg  300w
+                "
+                sizes="(max-width:61.9em) 20vw, (max-width:48em) 21vw, (max-width:36em) 30vw, 252px"
+                class="composition__img composition__img--1"
+                src="https://res.cloudinary.com/dlmzmbiec/image/upload/v1628366758/img-1_zfemat.jpg"
+                alt="image 1"
+            /></a>
+            <a href="javascript:void(0)" class="img2"
+              ><img
+                srcset="
+                  https://res.cloudinary.com/dlmzmbiec/image/upload/v1628366769/img-2_v9yonq.jpg              1999w,
+                  https://res.cloudinary.com/dlmzmbiec/image/upload/w_300,f_auto/v1628366769/img-2_v9yonq.jpg  345w
+                "
+                sizes="(max-width:61.9em) 20vw, (max-width:48em) 21vw, (max-width:36em) 30vw, 252px"
+                class="composition__img composition__img--2"
+                src="https://res.cloudinary.com/dlmzmbiec/image/upload/v1628366769/img-2_v9yonq.jpg"
+                alt="image 2"
+            /></a>
+            <a href="javascript:void(0)" class="img3"
+              ><img
+                srcset="
+                  https://res.cloudinary.com/dlmzmbiec/image/upload/f_auto/v1628366758/img-3_fwroyd.jpg       1000w,
+                  https://res.cloudinary.com/dlmzmbiec/image/upload/w_300,f_auto/v1628366758/img-3_fwroyd.jpg  300w
+                "
+                sizes="(max-width:61.9em) 20vw, (max-width:48em) 21vw, (max-width:36em) 30vw, 252px"
+                class="composition__img composition__img--3"
+                src="https://res.cloudinary.com/dlmzmbiec/image/upload/v1628366758/img-3_fwroyd.jpg"
+                alt="image 3"
+            /></a>
           </div>
         </div>
       </div>
@@ -161,7 +195,11 @@
       <div class="testimonials__container">
         <div class="testimonial testimonial--1">
           <figure class="testimonial__shape">
-            <img src="img/member-1-img.jpg" alt="Male Golfer" class="testimonial__image" />
+            <img
+              src="https://res.cloudinary.com/dlmzmbiec/image/upload/f_auto/v1628368013/member-1-img_mp7cxe.jpg"
+              alt="Male Golfer"
+              class="testimonial__image"
+            />
             <figcaption class="testimonial__caption">Pierre Cox</figcaption>
           </figure>
           <div class="testimonial__text">
@@ -176,7 +214,11 @@
 
         <div class="testimonial testimonial--2">
           <figure class="testimonial__shape">
-            <img src="img/member-2-img.jpg" alt="Male Golfer" class="testimonial__image" />
+            <img
+              src="https://res.cloudinary.com/dlmzmbiec/image/upload/f_auto/v1628368012/member-2-img_k2j3fi.jpg"
+              alt="Female Golfer"
+              class="testimonial__image"
+            />
             <figcaption class="testimonial__caption">Cierra Verga</figcaption>
           </figure>
           <div class="testimonial__text">
