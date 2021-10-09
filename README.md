@@ -4,7 +4,7 @@ Este es mi segundo proyecto del curso de desarrollo web frontend "Build Amazing 
 
 ## Diseño
 
-El sitio tiene un diseño acorde a su tema, tanto en la paleta de colores como en distintos componentes del mismo, tales como la bola de gold sticky que funciona como botón activador del modal y los detalles de textura en los radio button de la seccion de contacto. Es un diseño rudo con toques de glassmorfismo y gran contraste.
+El sitio tiene un diseño acorde a su tema, tanto en la paleta de colores como en distintos componentes del mismo, tales como la bola de golf sticky que funciona como botón activador del modal y los detalles de textura en los radio button de la seccion de contacto. Es un diseño rudo con toques de glassmorfismo y gran contraste.
 
 ### Preview
 
