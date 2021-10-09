@@ -1,8 +1,8 @@
 const menuNav = document.querySelector(".nav");
 const modOver = document.querySelector(".modal");
 const menuBtn = document.querySelector(".nav__button");
-
 const body = document.getElementsByTagName("body")[0];
+
 let menuOpen = false;
 
 menuBtn.addEventListener("click", function () {
